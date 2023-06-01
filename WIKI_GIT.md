@@ -32,6 +32,7 @@
 > > * _**git checkout -b nombreRamaNew** -> Se crea una nueva rama y se cambia a esta._
 > > * _**git branch -m nombreRamaOld nombreRamaNew** -> Cambiar el nombre de la rama, se hace normalmente para cambiar master por main._
 > > * _**git checkout nombreRama** -> cambia a la rama existente que le indicado._
+> > * _**git branch -d nombreRama** -> Elimina rama existente._
 > ## Commit
 > > * _**git commit -am "Message".**_
 > > * _**git commit -amend -m "Mensaje"** -> Para cambiar el mensaje de commit._
