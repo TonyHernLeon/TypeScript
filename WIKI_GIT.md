@@ -37,6 +37,7 @@
 > > * _**git commit -am "Message".**_
 > > * _**git commit -amend -m "Mensaje"** -> Para cambiar el mensaje de commit._
 > ## Reset
+> > * _**git reset nombreArchivo** -> (ANTES DE UN COMMIT) Si quieres sacar un archivo/carpeta del stage, antes del commit._
 > > * _**git reset --soft HEAD^** -> Para volver al commit antes del último commit._
 > > * _**git reset --mixed numCommit** -> Sin borrar cambios de contenido desliga los archivos que se haya hecho hasta del número de commit en adelante._
 > > * _**git reset --hard numCommit** -> Borra todos los cambios de contenido y desliga los archivos como con --mixed._
