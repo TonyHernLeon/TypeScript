@@ -1,11 +1,4 @@
 /**
- * Clase (Molde del objeto)
- *  
- * Lo normal es llamar a la clase como el archivo, 
- * como en java
- */
-
-/**
  * Exportaciones
  * 
  * export es para poder usarla la clase en otra clase, y sería así 
@@ -21,6 +14,25 @@ interface CamisetaBase{
     setColor(color);
     getColor();
 }
+
+/**
+ * Decorador
+ */
+function estampar (logo: string){
+    return function(target: Function){
+        target.prototype.estampacion = function():void{
+            console.log("Camiseta estampada con el logo de: "+logo);
+        }
+    }
+}
+/**
+ * Clase (Molde del objeto)
+ *  
+ * Lo normal es llamar a la clase como el archivo, 
+ * como en java
+ */
+
+@estampar('Adidas')
 class Camiseta implements CamisetaBase{ 
 
     //Propiedades (carcteristicas del objeto)
@@ -65,6 +77,8 @@ class Sudadera extends Camiseta{
 
 var camiseta = new Camiseta("Azul", "Playera", "Nike", "L", 19.95);
 var sudadera_prueba = new Sudadera("Negra", "Mullida", "Adidas", "L", 45.95);
+
+camiseta.estampacion();
 
 sudadera_prueba.setCapucha(true);
 
