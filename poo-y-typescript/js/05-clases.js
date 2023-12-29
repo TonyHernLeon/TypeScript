@@ -1,11 +1,8 @@
-// Clase (Molde del objeto)
 /**
+ * Clase (Molde del objeto)
+ *
  * Lo normal es llamar a la clase como el archivo,
  * como en java
- *
- * export es para poder usarla la clase en otra clase, y sería así
- * export class Camiseta{
- * }
  */
 var Camiseta = /** @class */ (function () {
     // Constructor

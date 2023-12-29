@@ -1,13 +1,27 @@
-// Clase (Molde del objeto)
 /**
+ * Clase (Molde del objeto)
+ *  
  * Lo normal es llamar a la clase como el archivo, 
  * como en java
+ */
+
+/**
+ * Exportaciones
  * 
  * export es para poder usarla la clase en otra clase, y sería así 
  * export class Camiseta{
  * }
  */
-class Camiseta{
+
+/**
+ * Interface
+ */
+
+interface CamisetaBase{
+    setColor(color);
+    getColor();
+}
+class Camiseta implements CamisetaBase{ 
 
     //Propiedades (carcteristicas del objeto)
     // public nombre: tipado;
