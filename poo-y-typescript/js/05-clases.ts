@@ -13,6 +13,14 @@ class Camiseta{
     private talla: string;
     private precio: number;
 
+    // Constructor
+    constructor(color, modelo, marca, talla, precio){
+        this.color = color;
+        this.modelo = modelo;
+        this.marca = marca;
+        this.talla = talla;
+        this.precio = precio;
+    }
     // Métodos (funciones o acciones del objeto)
     public setColor(color){
         this.color = color;
@@ -23,7 +31,6 @@ class Camiseta{
     }
 }
 
-var camiseta = new Camiseta();
-camiseta.setColor("azul");
+var camiseta = new Camiseta("Azul", "Playera", "Nike", "L", 19.95);
 
 console.log(camiseta);

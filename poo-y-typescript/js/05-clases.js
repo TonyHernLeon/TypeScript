@@ -4,7 +4,13 @@
  * como en java
  */
 var Camiseta = /** @class */ (function () {
-    function Camiseta() {
+    // Constructor
+    function Camiseta(color, modelo, marca, talla, precio) {
+        this.color = color;
+        this.modelo = modelo;
+        this.marca = marca;
+        this.talla = talla;
+        this.precio = precio;
     }
     // Métodos (funciones o acciones del objeto)
     Camiseta.prototype.setColor = function (color) {
@@ -15,6 +21,5 @@ var Camiseta = /** @class */ (function () {
     };
     return Camiseta;
 }());
-var camiseta = new Camiseta();
-camiseta.setColor("azul");
+var camiseta = new Camiseta("Azul", "Playera", "Nike", "L", 19.95);
 console.log(camiseta);
