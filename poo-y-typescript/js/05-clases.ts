@@ -49,6 +49,30 @@ class Camiseta implements CamisetaBase{
     }
 }
 
+//Clase Hija
+class Sudadera extends Camiseta{
+
+    private capucha: boolean;
+
+    setCapucha(capucha: boolean){
+        this.capucha = capucha;
+    }
+
+    getCapucha():boolean{
+        return this.capucha;
+    }
+}
+
 var camiseta = new Camiseta("Azul", "Playera", "Nike", "L", 19.95);
+var sudadera_prueba = new Sudadera("Negra", "Mullida", "Adidas", "L", 45.95);
+
+sudadera_prueba.setCapucha(true);
+
+console.log(sudadera_prueba);
+if (sudadera_prueba.getCapucha() == true){
+    console.log("La sudadera tiene capucha");
+}else{
+    console.log("La sudadera no tiene capucha");
+}
 
 console.log(camiseta);
