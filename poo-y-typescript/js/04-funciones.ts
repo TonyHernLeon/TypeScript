@@ -1,6 +1,7 @@
 // Funciones en TS
 /**
  * function nombreMetodo (parametro: tipoVariable) :tipoVariableReturn
+ * Si no se cumple esto, fallo de compilación 
  * 
  * @param numero 
  * @returns 
